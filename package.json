@@ -50,7 +50,8 @@
   },
   "dependencies": {
     "ajax": "^0.0.4",
-    "core-js": "^3.38.1"
+    "core-js": "^3.38.1",
+    "sass": "^1.83.0"
   },
   "repository": "https://github.com/ArtKonX/ahj-homeworks-rxjs-frontend.git"
 }
