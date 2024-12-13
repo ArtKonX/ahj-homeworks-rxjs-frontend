@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(238, 238, 238);
+    background-image: url('../img/background.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: 50%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+#app {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}

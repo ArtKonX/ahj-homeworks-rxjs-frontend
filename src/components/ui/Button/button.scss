@@ -1,0 +1,30 @@
+.btn-go-messages,
+.btn-stop-messages,
+.btn-clear-messages {
+    border: 1.5px solid gray;
+    color: gray;
+    font-size: 1.1rem;
+    padding: 10px;
+    max-width: calc(100% / 3 - 10px);
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 10px;
+
+    &:hover,
+    &:hover,
+    &:hover {
+        color: white;
+        background-color: gray;
+        border: 1.5px solid black;
+        transition: 1s;
+    }
+}
+
+.btn-go-messages {
+    margin-left: 0px;
+    max-width: calc(100% / 3);
+}

@@ -1,0 +1,10 @@
+.container {
+    max-width: 800px;
+    width: 100%;
+    
+    .message-demo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
