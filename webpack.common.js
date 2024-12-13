@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   target: "web",
@@ -51,5 +52,6 @@ module.exports = {
         // onEnd: { copy: [{ source: "src/static", destination: "dist" }] },
       },
     }),
+    new Dotenv(),
   ],
 };
