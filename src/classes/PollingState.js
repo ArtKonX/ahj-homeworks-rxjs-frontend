@@ -7,6 +7,10 @@ export default class PollingState {
     return this._pollingStorage;
   }
 
+  init() {
+    this.save();
+  }
+
   save() {
     localStorage.setItem("messages", JSON.stringify(this.pollingStorage));
   }

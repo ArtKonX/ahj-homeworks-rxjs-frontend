@@ -30,6 +30,8 @@ export default class Polling {
     this.container.append(this.title);
 
     this.pollingState = new this.pollingState();
+    this.pollingState.init();
+    
     this.loadedMessages = this.pollingState.load().messages;
 
     this.messagesList = new this.messagesList(
