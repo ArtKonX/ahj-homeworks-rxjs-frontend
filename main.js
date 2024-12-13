@@ -64,6 +64,7 @@ class Polling {
     this.parentEl.appendChild(this.container);
     this.container.append(this.title);
     this.pollingState = new this.pollingState();
+    this.pollingState.init();
     this.loadedMessages = this.pollingState.load().messages;
     this.messagesList = new this.messagesList(this.container, this.loadedMessages);
     this.subscriptionOnStream = new this.subscriptionOnStream(this.streamMessages$, this.messagesList, this.pollingState);
@@ -89,6 +90,9 @@ class PollingState {
   }
   get pollingStorage() {
     return this._pollingStorage;
+  }
+  init() {
+    this.save();
   }
   save() {
     localStorage.setItem("messages", JSON.stringify(this.pollingStorage));
