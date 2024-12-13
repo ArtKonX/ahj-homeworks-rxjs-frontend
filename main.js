@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 
 ;// ./src/environment/environment.js
-const API_ROOT = process.env.API_ROOT || "https://ahj-homeworks-rxjs-backend-eight.vercel.app";
+const API_ROOT = "MISSING_ENV_VAR".API_ROOT || "https://ahj-homeworks-rxjs-backend-eight.vercel.app";
 /* harmony default export */ const environment = (API_ROOT);
 ;// ./src/components/ui/Div/Div.js
 
@@ -1955,13 +1955,13 @@ function fromIterable(iterable) {
 }
 function fromAsyncIterable(asyncIterable) {
     return new Observable(function (subscriber) {
-        innerFrom_process(asyncIterable, subscriber).catch(function (err) { return subscriber.error(err); });
+        process(asyncIterable, subscriber).catch(function (err) { return subscriber.error(err); });
     });
 }
 function fromReadableStreamLike(readableStream) {
     return fromAsyncIterable(readableStreamLikeToAsyncGenerator(readableStream));
 }
-function innerFrom_process(asyncIterable, subscriber) {
+function process(asyncIterable, subscriber) {
     var asyncIterable_1, asyncIterable_1_1;
     var e_2, _a;
     return __awaiter(this, void 0, void 0, function () {
